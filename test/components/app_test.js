@@ -1,14 +1,10 @@
 import { renderComponent , expect } from '../test_helper';
 import App from '../../src/components/app';
 
-describe('App' , () => {
-  let component;
+describe ("App Component Tests", () => {
 
-  beforeEach(() => {
-    component = renderComponent(App);
-  });
+	it ("should contain a div" , () => {
+		const renderedApp= renderComponent(App);		
+	});
 
-  it('renders something', () => {
-    expect(component).to.exist;
-  });
 });
