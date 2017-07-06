@@ -4,7 +4,8 @@ import App from '../../src/components/app';
 describe ("App Component Tests", () => {
 
 	it ("should contain a div" , () => {
-		const renderedApp= renderComponent(App);		
+		const renderedApp= renderComponent(App);
+		expect(renderedApp).to.contain('React');
 	});
 
 });
