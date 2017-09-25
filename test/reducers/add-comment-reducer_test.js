@@ -21,7 +21,7 @@ describe("Add Comment Action creator ", () => {
             }];
 
         const dummyAction = {
-            TYPE: "DUMMY"
+            type: "DUMMY"
         };    
         var returnedState= commentReducer(previousState,dummyAction);
 
@@ -31,7 +31,7 @@ describe("Add Comment Action creator ", () => {
     it("should update comments state when called with the right action", () => {
         const previousState = [];
         const action = {
-            TYPE: ADD_COMMENT,
+            type: ADD_COMMENT,
             payload: {
                 comment: {
                     body : "This is a new state"

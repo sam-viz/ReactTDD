@@ -6,7 +6,7 @@ export default function addComment (state = [] , action) {
     if(action == undefined || action == null) {
         return state; 
     }
-    switch(action.TYPE) {
+    switch(action.type) {
         case ADD_COMMENT : 
             return [action.payload.comment, ...state];
 

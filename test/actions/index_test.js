@@ -8,7 +8,7 @@ describe("Add Comment Action creator ", () => {
 
     const commentBody = "Test body comment";
     const expectedReturn = {
-        TYPE : ADD_COMMENT,
+        type : ADD_COMMENT,
         payload: {
             comment: {
                 body : commentBody
